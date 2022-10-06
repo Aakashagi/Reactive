@@ -1,0 +1,55 @@
+<!-- <form [formGroup]="userForm">
+    <div class="form-group">
+        <input type="text" formControlName="name" class="form-control" placeholder="name">
+        <input type="file" formControlName="file" class="form-control">
+    </div>
+
+
+    <div class="btn">
+        <button type="button" class="btn-btn-primary" (click)="addItem()">Add</button>
+        <button type="button" class="btn-btn-primary" (click)="reset()">Reset</button>
+    </div>
+</form>
+
+
+<div class="col-sm-8">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <img>Img
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listData">
+                <td><span>{{item.name}}</span></td>
+                <td><img>{{item.file}}</td>
+                <td><button type="button" class="btn btn-primary" (click)="removeItem(item)">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<form [formGroup]="userForm">
+    <div class="form-group">
+        <img [src]="url" width="100" height="100" alt="">
+    </div>
+    <div class="btn">
+        <button type="button" class="btn-btn-primary" (click)="addItem()">Add</button>
+    </div>
+</form>
+
+
+
+<div class="col-sm-8">
+    <input type="file" (change)="onSelectFile($event)">
+            <div *ngFor="let item of listData">
+                <img *ngFor="let url of urls" [src]="url" width="100" height="100" class="m-2" alt="" >
+   
+                <button type="button" class="btn btn-primary" (click)="removeItem(item)">Remove</button>   
+                <br>   
+</div> 
+
+
+

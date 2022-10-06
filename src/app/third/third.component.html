@@ -1,0 +1,8 @@
+<div class="form-group mt-3" >
+    <label for="img">Upload image</label><br>
+    <input type="file" multiple id="fileupload" (change)="onSelectFile($event)" formControlName="fileupload" #fileInput id="file">
+    <input type="button" (click)="fileInput.click()" value="Add" class="btn btn-success">&nbsp;
+    <input type="button"(click)="remove()" value="remove" class="btn btn-danger">
+    <br>
+    <img *ngFor='let url of urls'  [src]="url" height="200" class="m-2">
+</div>

@@ -1,0 +1,19 @@
+.registration {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+.cent {
+    margin-top: 7%;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+}
+
+input{
+    width: 200px;
+    padding: 10px;
+}

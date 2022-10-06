@@ -1,0 +1,92 @@
+.container-fluid{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container {
+    background-color: #ececec;
+    
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.inner {
+    position: relative;
+}
+
+.inner.fa {
+
+    position: absolute;
+    padding: 6px 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.right.fa {
+    right: 10px;
+}
+
+.right input {
+    padding-right: 30px;
+}
+
+
+.centt {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948;
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; 
+  }
+
+
+
+
+
+  @media (max-width:990px) {
+
+    input {
+        width: 80%;
+    }
+    .edit {
+        
+        width: 85%;
+    }
+
+    .move {
+        width: 80%;
+    }
+
+
+  }
+
+
+  @media (max-width:600px) {
+
+    input {
+        width: 90%;
+    }
+
+    .edit {
+        width: 95%;
+    }
+
+
+
+  }
